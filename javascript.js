@@ -8,8 +8,8 @@ function calculate(){
     if (rateInput == ""){
         alert("ERROR! Need More Info.")
     }
-    document.getElementById("tipAmount").innerHTML = "$" + total*rate;
-    document.getElementById("taxAmount").innerHTML = "$" + total*0.055;
-    document.getElementById("TotalAmount").innerHTML = "$" + (total + (total*rate) + (total*0.055));
+    document.getElementById("tipAmount").innerHTML = "$" + totalInput*rateInput;
+    document.getElementById("taxAmount").innerHTML = "$" + totalInput*0.055;
+    document.getElementById("TotalAmount").innerHTML = "$" + (totalInput + (totalInput*rateInput) + (totalInput*0.055));
     return false;
 }
